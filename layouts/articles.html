@@ -16,10 +16,10 @@
       {{{ contents }}}
     </div>
     <ul class="c-paddedList">
-      {{#each data.entries}}
+      {{#each data.entries include=10}}
         <li>
           <div class="c-article c-card u-marginBottomLarge">
-            {{> articleHeader fields _fileName=_fileName }}
+            {{> articleHeader fields _fileName=_fileName}}
 
             <p data-markdown>{{ shorten fields.body }}</p>
             <a href="{{ _fileName }}">Read more...</a>
